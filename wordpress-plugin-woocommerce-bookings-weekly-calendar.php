@@ -15,8 +15,8 @@ Domain Path: /languages
 add_action('admin_menu', function () {
     $calendar_page = add_submenu_page(
         'edit.php?post_type=wc_booking',
-        __( 'Weekly Calendar', 'woocommerce-bookings-weekly-calendar' ),
-        __( 'Weekly Calendar', 'woocommerce-bookings-weekly-calendar' ),
+        __( 'Calendar Week View', 'woocommerce-bookings-weekly-calendar' ), //page title
+        __( 'Calendar Week View', 'woocommerce-bookings-weekly-calendar' ), //menu
         'manage_bookings',
         'booking_calendar_weekly',
         function () {
@@ -34,7 +34,7 @@ add_filter('woocommerce_screen_ids', function ($ids) {
 });
 
 /**
- * Add the driver bookings end points
+ * Add the front-end bookings end points
  */
 
 add_action('init', function () {
