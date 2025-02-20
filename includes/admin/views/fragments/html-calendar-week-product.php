@@ -11,7 +11,7 @@
 			<?php if ($firstRow): ?>
 				<?php $firstRow = FALSE; ?>
 				<td rowspan="<?php echo count($product_bookings); ?>">
-					<p><a class="product" title="<?php _e('Edit Product', 'wordpress-plugin-woocommerce-bookings-weekly-calendar'); ?> <?php echo $product_id; ?>"
+					<p><a class="product" title="<?php _e('Edit Product', 'woocommerce-bookings-weekly-calendar'); ?> <?php echo $product_id; ?>"
 						href="<?php echo admin_url(sprintf('post.php?post=%d&action=edit', $product_id)); ?>"><?php echo $product->post_title; ?></a></p>
 				</td>
 			<?php endif; ?>
@@ -24,9 +24,9 @@
 					<td>
 				<?php endif; ?>
 					<?php if ($day): ?>
-						<p><b><a class="customer" title="<?php _e('Edit Customer', 'wordpress-plugin-woocommerce-bookings-weekly-calendar'); ?> <?php echo $customer_id; ?>"
+						<p><b><a class="customer" title="<?php _e('Edit Customer', 'woocommerce-bookings-weekly-calendar'); ?> <?php echo $customer_id; ?>"
 							href="<?php echo admin_url(sprintf('edit-user.php?user_id=%d', $customer_id)); ?>"><?php echo $customer->name; ?></a></b></p>
-							<p><a class="customer" title="<?php _e('Email Customer', 'wordpress-plugin-woocommerce-bookings-weekly-calendar'); ?> <?php echo $customer_id; ?>"
+							<p><a class="customer" title="<?php _e('Email Customer', 'woocommerce-bookings-weekly-calendar'); ?> <?php echo $customer_id; ?>"
 								href="mailto:<?php echo $customer->email; ?>"><?php echo $customer->email; ?></a></p>
 					<?php endif; ?>
 					<ul>

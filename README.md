@@ -8,8 +8,8 @@ Author: Nick Breen
 
 Author URI: http://foobar.net.nz
 
-Plugin URI: https://github.com/nickbreen/wordpress-plugin-woocommerce-bookings-weekly-calendar
+Plugin URI: https://github.com/nickbreen/woocommerce-bookings-weekly-calendar
 
-Text Domain: wordpress-plugin-woocommerce-bookings-weekly-calendar
+Text Domain: woocommerce-bookings-weekly-calendar
 
 Domain Path: /languages
